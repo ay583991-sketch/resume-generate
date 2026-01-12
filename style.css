@@ -338,10 +338,11 @@ textarea.input-error {
     margin-bottom: 12px;
     align-self: flex-start;
     position: relative;
-    display: flex;
     align-items: center;
     justify-content: center;
+    display: none;
 }
+
 
 .profile-photo-wrapper::after {
     content: "Drag photo here";
@@ -467,7 +468,7 @@ textarea.input-error {
 
 /* TEMPLATE VARIANTS (Option B) */
 
-/* Template 1 - Classic Professional */
+/* TEMPLATE 1 - Classic Professional */
 #resume-preview.template-1 {
     background: #f9fafb;
     color: #111827;
@@ -478,7 +479,7 @@ textarea.input-error {
     border-bottom-color: #cbd5e1;
 }
 
-/* Template 2 - Modern Minimal (more whitespace, subtle borders) */
+/* TEMPLATE 2 - Modern Minimal (more whitespace, subtle borders) */
 #resume-preview.template-2 {
     background: #ffffff;
     color: #111827;
@@ -495,7 +496,7 @@ textarea.input-error {
     font-size: 12px;
 }
 
-/* Template 3 - Sidebar Accent */
+/* TEMPLATE 3 - Sidebar Accent */
 #resume-preview.template-3 {
     background: #ffffff;
     position: relative;
@@ -516,7 +517,7 @@ textarea.input-error {
     border-radius: 12px 0 0 12px;
 }
 
-/* Template 4 - Elegant Blue */
+/* TEMPLATE 4 - Elegant Blue */
 #resume-preview.template-4 {
     background: #eff6ff;
     color: #0f172a;
@@ -531,7 +532,7 @@ textarea.input-error {
     color: #1d4ed8;
 }
 
-/* Template 5 - Dark Professional */
+/* TEMPLATE 5 - Dark Professional */
 #resume-preview.template-5 {
     background: #020617;
     color: #e5e7eb;
@@ -554,6 +555,145 @@ textarea.input-error {
     background: #1e293b;
     color: #e5e7eb;
 }
+
+/* TEMPLATE 6 – Minimal Left Line */
+
+#resume-preview.template-6 {
+    background: #ffffff;
+    color: #111827;
+    position: relative;
+}
+
+#resume-preview.template-6::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 6px;
+    background: #2563eb;
+    border-radius: 12px 0 0 12px;
+}
+
+/* TEMPLATE 7 – Bold Top Header */
+#resume-preview.template-7 .resume-header {
+    border-bottom: none;
+    background: linear-gradient(135deg, #2563eb, #4f46e5);
+    color: white;
+    padding: 14px;
+    border-radius: 12px;
+}
+
+#resume-preview.template-7 .resume-header h1 {
+    font-size: 22px;
+}
+
+/* TEMPLATE 8 – Soft Gray Clean */
+#resume-preview.template-8 {
+    background: #f3f4f6;
+    color: #111827;
+}
+
+#resume-preview.template-8 .resume-section h2 {
+    color: #374151;
+}
+
+/* TEMPLATE 9 – Modern Two Tone */
+#resume-preview.template-9 {
+    background: #ecfeff;
+    color: #0f172a;
+}
+
+#resume-preview.template-9 .resume-section h2 {
+    color: #0e7490;
+}
+
+
+/* TEMPLATE 10 – Corporate Blue*/
+#resume-preview.template-10 {
+    background: #e0f2fe;
+    color: #0f172a;
+}
+
+#resume-preview.template-10 .resume-section h2 {
+    color: #0369a1;
+}
+
+/*TEMPLATE 11 – Elegant Serif*/
+#resume-preview.template-11 {
+    background: #ffffff;
+    font-family: "Georgia", serif;
+}
+
+/* TEMPLATE 12 – Creative Accent*/
+#resume-preview.template-12 {
+    background: #fff7ed;
+}
+
+#resume-preview.template-12 .resume-section h2 {
+    color: #ea580c;
+}
+
+/* TEMPLATE 13 – ATS Friendly (NO COLORS)*/
+#resume-preview.template-13 {
+    background: #ffffff;
+    color: #000000;
+    border: none;
+}
+
+#resume-preview.template-13 * {
+    box-shadow: none !important;
+}
+
+/*TEMPLATE 14 – Minimal Mono*/
+#resume-preview.template-14 {
+    background: #ffffff;
+    color: #111827;
+}
+
+#resume-preview.template-14 .resume-section h2 {
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 4px;
+}
+
+/*TEMPLATE 15 – Dark Accent Pro*/
+#resume-preview.template-15 {
+    background: #020617;
+    color: #e5e7eb;
+    border-color: #1e293b;
+}
+
+#resume-preview.template-15 .resume-header {
+    border-bottom-color: #334155;
+}
+
+#resume-preview.template-15 .resume-section h2 {
+    color: #60a5fa;
+}
+
+/* Skills */
+#resume-preview.template-15 .tag-list li {
+    background: linear-gradient(135deg, #1e293b, #020617);
+    color: #e5e7eb;
+    border: 1px solid #334155;
+    font-weight: 500;
+}
+
+/* Lists text fix */
+#resume-preview.template-15 .bulleted-list li {
+    color: #e5e7eb;
+}
+
+#resume-preview.template-15 .bulleted-list li::before {
+    background: #60a5fa;
+}
+#resume-preview.template-15 .profile-photo-wrapper {
+    border-color: #60a5fa;
+}
+#resume-preview.template-15 li {
+    color: #e5e7eb;
+}
+
 
 /* Modal */
 .modal {
@@ -672,7 +812,8 @@ textarea.input-error {
         position: absolute;
         left: 0;
         top: 0;
-        width: 100%;
+        width: 794px;
+        min-height: 1123px;
         border-radius: 0;
         box-shadow: none;
     }
